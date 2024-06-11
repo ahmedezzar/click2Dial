@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Settings</title>
+  <style>
+    /* CSS pour l'icône de téléphone */
+    .phone-icon {
+      background-image: url('/Users/ilyesnajjari/Desktop/click2dial/icons/phone-icon.png'); /* Assurez-vous que ce chemin est correct */
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 20px; /* Ajustez cette taille selon vos besoins */
+      height: 20px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px; /* Espacement entre l'icône et le numéro */
+      cursor: pointer; /* Définir le curseur pour indiquer que l'icône est cliquable */
+    }
+    .highlighted-phone-number {
+      background-color: yellow; /* Surlignement */
+    }
+  </style>
+</head>
+<body>
+  <h1>Test Phone Number Highlighter</h1>
+  <p>Test avec un numéro de téléphone : <a href="tel:+1-800-123-4567" data-number="+1-800-123-4567" class="highlighted-phone-number"><span class="phone-icon">📞</span>+1-800-123-4567</a></p>
+  <p>Autre numéro : <a href="tel:(123) 456-7890" data-number="(123) 456-7890" class="highlighted-phone-number"><span class="phone-icon">📞</span>(123) 456-7890</a></p>
+
+  <form>
+    <div class="panel-formElements-item browser-style">
+      <div class="label"><label class="browser-style-label" for="server">Server</label></div>
+      <div class="browser-style"><input type="text" id="server"><label for=""></label></div>
+    </div>
+    <div class="panel-formElements-item browser-style">
+      <div class="label"><label class="browser-style-label" for="port">Port</label></div>
+      <div class="browser-style"><input type="text" id="port"><label for=""></label></div>
+    </div>
+    <div class="panel-formElements-item browser-style">
+      <div class="label"><label class="browser-style-label" for="username">Username</label></div>
+      <div class="browser-style"><input type="text" id="username"><label for=""></label></div>
+    </div>
+    <div class="panel-formElements-item browser-style">
+      <div class="label"><label class="browser-style-label" for="password">Password</label></div>
+      <div class="browser-style"><input type="password" id="password"><label for=""></label></div>
+    </div>
+    <div class="panel-formElements-item browser-style">
+      <div class="label"><label class="browser-style-label" for="context">Context</label></div>
+      <div class="browser-style"><input type="text" id="context"><label for=""></label></div>
+    </div>
+    <div class="panel-formElements-item browser-style">
+      <div class="label"><label class="browser-style-label" for="protocol">Protocol</label></div>
+      <div class="browser-style"><input type="text" id="protocol"><label for=""></label></div>
+      <div class="label"><label class="browser-style-label" for="channel">Channel</label></div>
+      <div class="browser-style"><input type="text" id="channel"><label for=""></label></div>
+    </div>
+    <button type="submit">Save</button>
+  </form>
+  <script src="options.js"></script>
+</body>
+</html>
